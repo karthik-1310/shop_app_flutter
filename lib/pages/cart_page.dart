@@ -34,7 +34,7 @@ class CartPage extends StatelessWidget {
                   builder: (context) {
                     return AlertDialog(
                       title: Text(
-                        'Delete Product',
+                        'Deleted Product',
                         style: Theme.of(context).textTheme.titleMedium,
                       ),
                       content: const Text(
