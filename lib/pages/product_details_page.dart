@@ -123,7 +123,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                       minimumSize: const Size(350, 50),
                     ),
                     label: const Text(
-                      'Add To Cart',
+                      'Add Product To Cart',
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 18,

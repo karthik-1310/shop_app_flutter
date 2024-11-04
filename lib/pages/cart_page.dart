@@ -34,7 +34,7 @@ class CartPage extends StatelessWidget {
                   builder: (context) {
                     return AlertDialog(
                       title: Text(
-                        'Deleted a Product',
+                        'Delete a Product',
                         style: Theme.of(context).textTheme.titleMedium,
                       ),
                       content: const Text(
@@ -48,6 +48,12 @@ class CartPage extends StatelessWidget {
                             Provider.of<CartProvider>(context, listen: false)
                                 .removeProduct(cartItem);
                             Navigator.of(context).pop();
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                duration: Duration(seconds: 1),
+                                content: Text('Product removed from cart!'),
+                              ),
+                            );
                           },
                           child: const Text(
                             "Yes",
